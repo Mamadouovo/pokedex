@@ -18,9 +18,17 @@ $(function() {
   for(i=0;i<pokemon.abilities.length;i++) {
   $(".ability-names").append("<li>" + pokemon.abilities[i].name + "</li>")// TODO: Add ability names here to the <ul> with class .ability-names
   }
-  // TODO: Add egg group names here to a <ul> that you created
-
-  // TODO: Add move names in alphabetical order here to the existing <ul>
+  
+  for(i=0;i<pokemon.egg_groups.length;i++) {
+  $(".ability-names").append("<li>" + pokemon.egg_groups[i].name + "</li>")// TODO: Add egg group names here to a <ul> that you created
+  }
+  
+   for(i=0;i<pokemon.moves.length;i++) {
+     var movesOrder = [pokemon.moves[i].name]
+  $(".moves").append("<li>" + movesOrder.sort() + "</li>")// TODO: Add egg group names here to a <ul> that you created
+  
+     
+   }// TODO: Add move names in alphabetical order here to the existing <ul>
   // TODO: Add ONLY level up move names to the <ul> you created
 
   // Now... take a deep breath and go back to your move lists.
